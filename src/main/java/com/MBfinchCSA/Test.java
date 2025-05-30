@@ -1,16 +1,18 @@
-package com.MBfinchCSA;
+package com.mbfinchcsa;
 
+import com.birdbrain.Finch;
 public class Test {
 
     public static void main(String[]args){
-        System.out.println("Hello:");
-
-        int[] score = new int[20];
-
-        for(int i : score){
-            System.out.println(i);
+        Finch bird = new Finch();
+        int dis = bird.getDistance();
+        if(dis<=5){
+            bird.setTurn("L", 90, 100);
         }
+
+        bird.stop();
+        bird.disconnect();
+    }
 
 
     }
-}
