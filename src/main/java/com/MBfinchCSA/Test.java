@@ -13,6 +13,4 @@ public class Test {
         bird.stop();
         bird.disconnect();
     }
-
-
-    }
+}
